@@ -2,7 +2,9 @@ class usuario {
    constructor(nombre, apellido){
       this.nombre = nombre;
       this.apellido = apellido;
-      this.libros = [{
+      this.mascotas = ["perro","gato"];
+      this.libros =
+      [{
          nombre:"Habitos atomicos",
          autor:"James Clear"
        },
@@ -10,7 +12,6 @@ class usuario {
         nombre: "El Alquimista",
         autor:"Paulo Coelho"
        }];
-      this.mascotas = ["perro","gato"]
    } 
 
     getFullName = () => {
@@ -23,17 +24,25 @@ class usuario {
     }
 
    countMascotas = () => {
-       this.mascotas++;
-       usuario.countMascotas()
+      console.log(this.mascotas.length);
     }
 
-   // AddBook
+//     getBooks(nombre) {
+//       console.log(this.libros.nombre)
+// }
 
-   // getBookNames
-}
+   addBook(nombre, autor) {
+         this.libros.push(nombre, autor);
+         console.log(this.libros)
+   }
+
+ }
 
 const usuario1 = new usuario("Sandra", "Valenzuela")
+
 
 usuario1.getFullName();
 usuario1.addMascota();
 usuario1.countMascotas();
+usuario1.getBooks();
+usuario1.addBook("Cien años de soledad", "Marquez");
