@@ -18,11 +18,10 @@ app.get('/productos', async(req, res)=>{
     res.send(productos);
 });
 
-app.get('/productosRandom', async(req, res)=>{
+app.get('/productoRandom', async(req, res)=>{
     const productos = await products.getAll();
-    let numerosRandom = Math.floor(Math.random() * productos.length);
-    let value = productos[numerosRandom];
-    res.send(value);
+    let numeroRandom = Math.floor(Math.random() * productos.length);
+    res.send(productos[numeroRandom]);
 });
 
 
