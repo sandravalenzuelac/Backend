@@ -1,0 +1,20 @@
+[
+    { 
+        "id": 1,
+        "name":"Remera color negra",
+        "price": 1,
+        "thumbnail":"www.image.com"
+    },
+    {
+        "id": 2,
+        "name":"Remera color blanca",
+        "price": 3,
+        "thumbnail":"www.image.com"
+    },
+    {
+        "id": 3,
+        "name":"Buso beige",
+        "price": 4,
+        "thumbnail":"www.image.com"
+    }
+]
